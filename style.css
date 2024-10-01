@@ -1,0 +1,221 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFA500;
+}
+
+header {
+    background: #000;
+    color: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4f4f4;
+}
+
+.hero {
+    background: url('Images/Candid_Portrait.jpg') center;   
+    height: 600px;    
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Hide all sections initially except home */
+.section {
+    display: none;
+}
+
+/* Show home section by default */
+#home {
+    display: block;
+}
+
+h2 {
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 5px;
+}
+
+.cta-button {
+    background: white;
+    color: black;
+    font-weight: 800;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: white;
+    color: #000;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* This ensures the container takes up the remaining space */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #000;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* Contact section */
+.contact-section {
+    text-align: center;
+    width: 100%;
+}
+
+/* Add responsive media queries */
+@media (max-width: 600px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+}
+
+h6 {
+    line-height: 1.5cm;
+    margin-left: -3cm;
+    margin-right: -3cm;
+    text-align: justify;
+    text-indent: 3cm;
+    font-size: medium;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+h2 {
+    margin-left: -7cm;
+    margin-right: -7cm;
+} 
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    background: #ffffff;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h5 {
+    text-indent: 1cm;
+    line-height: 1cm;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+
+a {
+    color: black;
+    font-size:x-large;
+}
+
+h7 {
+    font-size: medium;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    align-items: flex-start; /* Align links to the left */
+}
+
+.contact-details {
+    font-size: 1.5rem;
+    margin: 10px 0; /* Add vertical space between the links */
+    padding-left: -75px; /* Indentation for a staggered effect */
+    transition: all 0.3s ease;
+}
+
+.contact-details:nth-child(2) {
+    padding-left: 150px; /* Increase indentation */
+}
+
+.contact-details:nth-child(3) {
+    padding-left: 275px; /* Further increase indentation */
+}
+
+.contact-details:nth-child(4) {
+    padding-left: 400px;
+}
+
+.contact-details:nth-child(5) {
+    padding-left: 575px;
+}
+
+.contact-details:hover {
+    transform: translateY(-5px); /* Slightly lift the link on hover */
+    color: white;
+}
+
+.view-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; /* Button background color */
+    color: orange; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.view-more:hover {
+    background-color: orange; /* Change background on hover */
+    color: black; /* Change text color on hover */
+}
